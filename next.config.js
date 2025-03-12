@@ -3,9 +3,9 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   reactStrictMode: true,
-  // Ajuste estes valores para o nome exato do seu repositório
+  // Ajuste aqui conforme o nome do repo
   assetPrefix: isProd ? '/consiliencia/' : '',
-  basePath: isProd ? '/consiliencia' : '',
+  basePath: isProd ? '/consiliencia' : ''
 };
 
 module.exports = nextConfig;
