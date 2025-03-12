@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   reactStrictMode: true,
-  // Se quiser usar GitHub Pages, descomente e ajuste o basePath e assetPrefix:
-  // basePath: '/nome-do-repo',
-  // assetPrefix: '/nome-do-repo'
+  // Ajuste estes valores para o nome exato do seu repositório
+  assetPrefix: isProd ? '/consiliencia/' : '',
+  basePath: isProd ? '/consiliencia' : '',
 };
 
 module.exports = nextConfig;
